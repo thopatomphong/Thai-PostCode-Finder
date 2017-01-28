@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368CC0BF1BD5B765C9F8BB31 /* Pods_PostCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E386432A41F949C72231EA93 /* Pods_PostCode.framework */; };
+		C8C47E0C3C1C8BD7A120AA99 /* Pods_PostCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D00004329878D788D8875F /* Pods_PostCodeUITests.framework */; };
+		E68CC0B51E3CF03100C08170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CC0B41E3CF03100C08170 /* AppDelegate.swift */; };
+		E68CC0B71E3CF03100C08170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CC0B61E3CF03100C08170 /* ViewController.swift */; };
+		E68CC0BA1E3CF03100C08170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0B81E3CF03100C08170 /* Main.storyboard */; };
+		E68CC0BC1E3CF03100C08170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0BB1E3CF03100C08170 /* Assets.xcassets */; };
+		E68CC0BF1E3CF03100C08170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0BD1E3CF03100C08170 /* LaunchScreen.storyboard */; };
+		E68CC0CA1E3CF03100C08170 /* PostCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CC0C91E3CF03100C08170 /* PostCodeTests.swift */; };
+		E68CC0D51E3CF03100C08170 /* PostCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CC0D41E3CF03100C08170 /* PostCodeUITests.swift */; };
+		E68CC0E31E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
+		E68CC0E41E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
+		E68CC0E51E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
+		EFFA705A8B6C8815488138AB /* Pods_PostCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C1BBD79AF7E85EE87FA2 /* Pods_PostCodeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E68CC0C61E3CF03100C08170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68CC0A91E3CF03100C08170 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68CC0B01E3CF03100C08170;
+			remoteInfo = PostCode;
+		};
+		E68CC0D11E3CF03100C08170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68CC0A91E3CF03100C08170 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68CC0B01E3CF03100C08170;
+			remoteInfo = PostCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E372EF23445A49B64AA7C4F /* Pods-PostCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeUITests/Pods-PostCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		217901E26DD5A6D7239B4F5B /* Pods-PostCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCode/Pods-PostCode.debug.xcconfig"; sourceTree = "<group>"; };
+		52D00004329878D788D8875F /* Pods_PostCodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB2747B79B579630DA031F1 /* Pods-PostCodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeTests/Pods-PostCodeTests.release.xcconfig"; sourceTree = "<group>"; };
+		67A55A12EA324AA016D81BF4 /* Pods-PostCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostCode/Pods-PostCode.release.xcconfig"; sourceTree = "<group>"; };
+		7A1D21AB38A2634A2D55885F /* Pods-PostCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeTests/Pods-PostCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBF4C1BBD79AF7E85EE87FA2 /* Pods_PostCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E386432A41F949C72231EA93 /* Pods_PostCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68CC0B11E3CF03100C08170 /* PostCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68CC0B41E3CF03100C08170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E68CC0B61E3CF03100C08170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E68CC0B91E3CF03100C08170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E68CC0BB1E3CF03100C08170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E68CC0BE1E3CF03100C08170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E68CC0C01E3CF03100C08170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68CC0C51E3CF03100C08170 /* PostCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68CC0C91E3CF03100C08170 /* PostCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeTests.swift; sourceTree = "<group>"; };
+		E68CC0CB1E3CF03100C08170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68CC0D01E3CF03100C08170 /* PostCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68CC0D41E3CF03100C08170 /* PostCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeUITests.swift; sourceTree = "<group>"; };
+		E68CC0D61E3CF03100C08170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68CC0E21E3CF07400C08170 /* postcode.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = postcode.sqlite; sourceTree = "<group>"; };
+		FC5B62E376AAEE7C6F0EDA12 /* Pods-PostCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeUITests/Pods-PostCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E68CC0AE1E3CF03100C08170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CC0BF1BD5B765C9F8BB31 /* Pods_PostCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0C21E3CF03100C08170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFA705A8B6C8815488138AB /* Pods_PostCodeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0CD1E3CF03100C08170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C47E0C3C1C8BD7A120AA99 /* Pods_PostCodeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143B135715B54C0AE95264E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				217901E26DD5A6D7239B4F5B /* Pods-PostCode.debug.xcconfig */,
+				67A55A12EA324AA016D81BF4 /* Pods-PostCode.release.xcconfig */,
+				7A1D21AB38A2634A2D55885F /* Pods-PostCodeTests.debug.xcconfig */,
+				5AB2747B79B579630DA031F1 /* Pods-PostCodeTests.release.xcconfig */,
+				FC5B62E376AAEE7C6F0EDA12 /* Pods-PostCodeUITests.debug.xcconfig */,
+				1E372EF23445A49B64AA7C4F /* Pods-PostCodeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92D5806F7D00B5E37CD51885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E386432A41F949C72231EA93 /* Pods_PostCode.framework */,
+				CBF4C1BBD79AF7E85EE87FA2 /* Pods_PostCodeTests.framework */,
+				52D00004329878D788D8875F /* Pods_PostCodeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E68CC0A81E3CF03100C08170 = {
+			isa = PBXGroup;
+			children = (
+				E68CC0B31E3CF03100C08170 /* PostCode */,
+				E68CC0C81E3CF03100C08170 /* PostCodeTests */,
+				E68CC0D31E3CF03100C08170 /* PostCodeUITests */,
+				E68CC0B21E3CF03100C08170 /* Products */,
+				143B135715B54C0AE95264E6 /* Pods */,
+				92D5806F7D00B5E37CD51885 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E68CC0B21E3CF03100C08170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E68CC0B11E3CF03100C08170 /* PostCode.app */,
+				E68CC0C51E3CF03100C08170 /* PostCodeTests.xctest */,
+				E68CC0D01E3CF03100C08170 /* PostCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68CC0B31E3CF03100C08170 /* PostCode */ = {
+			isa = PBXGroup;
+			children = (
+				E68CC0B41E3CF03100C08170 /* AppDelegate.swift */,
+				E68CC0B61E3CF03100C08170 /* ViewController.swift */,
+				E68CC0B81E3CF03100C08170 /* Main.storyboard */,
+				E68CC0BB1E3CF03100C08170 /* Assets.xcassets */,
+				E68CC0BD1E3CF03100C08170 /* LaunchScreen.storyboard */,
+				E68CC0C01E3CF03100C08170 /* Info.plist */,
+				E68CC0E21E3CF07400C08170 /* postcode.sqlite */,
+			);
+			path = PostCode;
+			sourceTree = "<group>";
+		};
+		E68CC0C81E3CF03100C08170 /* PostCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E68CC0C91E3CF03100C08170 /* PostCodeTests.swift */,
+				E68CC0CB1E3CF03100C08170 /* Info.plist */,
+			);
+			path = PostCodeTests;
+			sourceTree = "<group>";
+		};
+		E68CC0D31E3CF03100C08170 /* PostCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E68CC0D41E3CF03100C08170 /* PostCodeUITests.swift */,
+				E68CC0D61E3CF03100C08170 /* Info.plist */,
+			);
+			path = PostCodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E68CC0B01E3CF03100C08170 /* PostCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68CC0D91E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCode" */;
+			buildPhases = (
+				0372AB72E295E152035C5952 /* [CP] Check Pods Manifest.lock */,
+				E68CC0AD1E3CF03100C08170 /* Sources */,
+				E68CC0AE1E3CF03100C08170 /* Frameworks */,
+				E68CC0AF1E3CF03100C08170 /* Resources */,
+				7C9328EDA2EF6CDA20B18907 /* [CP] Embed Pods Frameworks */,
+				F5A69CD20CE0A434CE98887D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostCode;
+			productName = PostCode;
+			productReference = E68CC0B11E3CF03100C08170 /* PostCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E68CC0C41E3CF03100C08170 /* PostCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68CC0DC1E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCodeTests" */;
+			buildPhases = (
+				C790A7D2F4F5DA94EDC3A83B /* [CP] Check Pods Manifest.lock */,
+				E68CC0C11E3CF03100C08170 /* Sources */,
+				E68CC0C21E3CF03100C08170 /* Frameworks */,
+				E68CC0C31E3CF03100C08170 /* Resources */,
+				8690F7ACCF7132602C5E8BA4 /* [CP] Embed Pods Frameworks */,
+				40F15B3DB05CA0F9F3079A20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E68CC0C71E3CF03100C08170 /* PBXTargetDependency */,
+			);
+			name = PostCodeTests;
+			productName = PostCodeTests;
+			productReference = E68CC0C51E3CF03100C08170 /* PostCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E68CC0CF1E3CF03100C08170 /* PostCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68CC0DF1E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCodeUITests" */;
+			buildPhases = (
+				1E0AC1F68090A510A14A2F58 /* [CP] Check Pods Manifest.lock */,
+				E68CC0CC1E3CF03100C08170 /* Sources */,
+				E68CC0CD1E3CF03100C08170 /* Frameworks */,
+				E68CC0CE1E3CF03100C08170 /* Resources */,
+				F5A5F4FD17E964490FAB4A12 /* [CP] Embed Pods Frameworks */,
+				CE528103AD0F77704A6C4196 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E68CC0D21E3CF03100C08170 /* PBXTargetDependency */,
+			);
+			name = PostCodeUITests;
+			productName = PostCodeUITests;
+			productReference = E68CC0D01E3CF03100C08170 /* PostCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E68CC0A91E3CF03100C08170 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "ReedUs Tech";
+				TargetAttributes = {
+					E68CC0B01E3CF03100C08170 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LUJKXGHEJ5;
+						ProvisioningStyle = Automatic;
+					};
+					E68CC0C41E3CF03100C08170 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LUJKXGHEJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E68CC0B01E3CF03100C08170;
+					};
+					E68CC0CF1E3CF03100C08170 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LUJKXGHEJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E68CC0B01E3CF03100C08170;
+					};
+				};
+			};
+			buildConfigurationList = E68CC0AC1E3CF03100C08170 /* Build configuration list for PBXProject "PostCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E68CC0A81E3CF03100C08170;
+			productRefGroup = E68CC0B21E3CF03100C08170 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E68CC0B01E3CF03100C08170 /* PostCode */,
+				E68CC0C41E3CF03100C08170 /* PostCodeTests */,
+				E68CC0CF1E3CF03100C08170 /* PostCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E68CC0AF1E3CF03100C08170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0E31E3CF07400C08170 /* postcode.sqlite in Resources */,
+				E68CC0BF1E3CF03100C08170 /* LaunchScreen.storyboard in Resources */,
+				E68CC0BC1E3CF03100C08170 /* Assets.xcassets in Resources */,
+				E68CC0BA1E3CF03100C08170 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0C31E3CF03100C08170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0E41E3CF07400C08170 /* postcode.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0CE1E3CF03100C08170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0E51E3CF07400C08170 /* postcode.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0372AB72E295E152035C5952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E0AC1F68090A510A14A2F58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40F15B3DB05CA0F9F3079A20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCodeTests/Pods-PostCodeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C9328EDA2EF6CDA20B18907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCode/Pods-PostCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8690F7ACCF7132602C5E8BA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCodeTests/Pods-PostCodeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C790A7D2F4F5DA94EDC3A83B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE528103AD0F77704A6C4196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCodeUITests/Pods-PostCodeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A5F4FD17E964490FAB4A12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCodeUITests/Pods-PostCodeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A69CD20CE0A434CE98887D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostCode/Pods-PostCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E68CC0AD1E3CF03100C08170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0B71E3CF03100C08170 /* ViewController.swift in Sources */,
+				E68CC0B51E3CF03100C08170 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0C11E3CF03100C08170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0CA1E3CF03100C08170 /* PostCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68CC0CC1E3CF03100C08170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68CC0D51E3CF03100C08170 /* PostCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E68CC0C71E3CF03100C08170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E68CC0B01E3CF03100C08170 /* PostCode */;
+			targetProxy = E68CC0C61E3CF03100C08170 /* PBXContainerItemProxy */;
+		};
+		E68CC0D21E3CF03100C08170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E68CC0B01E3CF03100C08170 /* PostCode */;
+			targetProxy = E68CC0D11E3CF03100C08170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E68CC0B81E3CF03100C08170 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68CC0B91E3CF03100C08170 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E68CC0BD1E3CF03100C08170 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68CC0BE1E3CF03100C08170 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E68CC0D71E3CF03100C08170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E68CC0D81E3CF03100C08170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E68CC0DA1E3CF03100C08170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 217901E26DD5A6D7239B4F5B /* Pods-PostCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E68CC0DB1E3CF03100C08170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A55A12EA324AA016D81BF4 /* Pods-PostCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E68CC0DD1E3CF03100C08170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1D21AB38A2634A2D55885F /* Pods-PostCodeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostCode.app/PostCode";
+			};
+			name = Debug;
+		};
+		E68CC0DE1E3CF03100C08170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB2747B79B579630DA031F1 /* Pods-PostCodeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostCode.app/PostCode";
+			};
+			name = Release;
+		};
+		E68CC0E01E3CF03100C08170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5B62E376AAEE7C6F0EDA12 /* Pods-PostCodeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PostCode;
+			};
+			name = Debug;
+		};
+		E68CC0E11E3CF03100C08170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E372EF23445A49B64AA7C4F /* Pods-PostCodeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LUJKXGHEJ5;
+				INFOPLIST_FILE = PostCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedustech.PostCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PostCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E68CC0AC1E3CF03100C08170 /* Build configuration list for PBXProject "PostCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68CC0D71E3CF03100C08170 /* Debug */,
+				E68CC0D81E3CF03100C08170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68CC0D91E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68CC0DA1E3CF03100C08170 /* Debug */,
+				E68CC0DB1E3CF03100C08170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E68CC0DC1E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68CC0DD1E3CF03100C08170 /* Debug */,
+				E68CC0DE1E3CF03100C08170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E68CC0DF1E3CF03100C08170 /* Build configuration list for PBXNativeTarget "PostCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68CC0E01E3CF03100C08170 /* Debug */,
+				E68CC0E11E3CF03100C08170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E68CC0A91E3CF03100C08170 /* Project object */;
+}

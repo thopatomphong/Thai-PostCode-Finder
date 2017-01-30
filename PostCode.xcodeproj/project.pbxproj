@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		368CC0BF1BD5B765C9F8BB31 /* Pods_PostCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E386432A41F949C72231EA93 /* Pods_PostCode.framework */; };
 		C8C47E0C3C1C8BD7A120AA99 /* Pods_PostCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D00004329878D788D8875F /* Pods_PostCodeUITests.framework */; };
+		E6401A141E3EEA340081BF04 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6401A131E3EEA340081BF04 /* DBManager.swift */; };
+		E6401A151E3EEA340081BF04 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6401A131E3EEA340081BF04 /* DBManager.swift */; };
+		E6401A161E3EEA340081BF04 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6401A131E3EEA340081BF04 /* DBManager.swift */; };
 		E64BDED81E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
 		E64BDED91E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
 		E64BDEDA1E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
@@ -50,6 +53,7 @@
 		7A1D21AB38A2634A2D55885F /* Pods-PostCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeTests/Pods-PostCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBF4C1BBD79AF7E85EE87FA2 /* Pods_PostCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E386432A41F949C72231EA93 /* Pods_PostCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6401A131E3EEA340081BF04 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCodeTableViewController.swift; sourceTree = "<group>"; };
 		E68CC0B11E3CF03100C08170 /* PostCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68CC0B41E3CF03100C08170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			children = (
 				E68CC0B41E3CF03100C08170 /* AppDelegate.swift */,
 				E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */,
+				E6401A131E3EEA340081BF04 /* DBManager.swift */,
 				E68CC0B81E3CF03100C08170 /* Main.storyboard */,
 				E68CC0BB1E3CF03100C08170 /* Assets.xcassets */,
 				E68CC0BD1E3CF03100C08170 /* LaunchScreen.storyboard */,
@@ -460,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E68CC0B51E3CF03100C08170 /* AppDelegate.swift in Sources */,
+				E6401A141E3EEA340081BF04 /* DBManager.swift in Sources */,
 				E64BDED81E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64BDED91E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */,
+				E6401A151E3EEA340081BF04 /* DBManager.swift in Sources */,
 				E68CC0CA1E3CF03100C08170 /* PostCodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64BDEDA1E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */,
+				E6401A161E3EEA340081BF04 /* DBManager.swift in Sources */,
 				E68CC0D51E3CF03100C08170 /* PostCodeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

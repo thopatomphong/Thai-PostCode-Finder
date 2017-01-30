@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'PostCode' do
 use_frameworks!
 
-  pod 'SQLite.swift', '~> 0.11.2'
+  pod 'FMDB'
 
   target 'PostCodeTests' do
     inherit! :search_paths

@@ -1,14 +1,14 @@
 PODS:
-  - SQLite.swift (0.11.2):
-    - SQLite.swift/standard (= 0.11.2)
-  - SQLite.swift/standard (0.11.2)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
 
 DEPENDENCIES:
-  - SQLite.swift (~> 0.11.2)
+  - FMDB
 
 SPEC CHECKSUMS:
-  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
 
-PODFILE CHECKSUM: 5dbf3b4d2fca957e4820990b6d9a41f1eb9e1044
+PODFILE CHECKSUM: ee68d3be96111649fac97e5de37b513fc92804de
 
 COCOAPODS: 1.2.0.rc.1

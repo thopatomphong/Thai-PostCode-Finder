@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import FMDB
+
+//Define Model
+struct PostCodeInfo {
+    var id: String!
+    var province: String!
+    var district: String!
+    var subdistrict: String!
+    var postcode: String!
+}
 
 class PostCodeTableViewController: UITableViewController {
     
     // MARK: - Properties
     
     let searchController = UISearchController(searchResultsController: nil)
+    
+    var postcodes = [PostCodeInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,21 +45,27 @@ class PostCodeTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return postcodes.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        //Define PostCode Variable
+        let province = postcodes[indexPath.row].province!
+        let district = postcodes[indexPath.row].district!
+        let subdistrict = postcodes[indexPath.row].subdistrict!
+        let postcode = postcodes[indexPath.row].postcode!
+        
+        //Set Label Text
+        cell.textLabel?.text = "\(postcode) ต.\(subdistrict) อ.\(district)"
+        cell.detailTextLabel?.text = " จ.\(province)"
 
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 }
 
@@ -61,6 +79,8 @@ extension PostCodeTableViewController: UISearchResultsUpdating {
         }
         
         print("Search : \(searchText)")
+        postcodes = DBManager.shared.loadPostCode(searchText: searchText)
+        tableView.reloadData()
     }
     
 }

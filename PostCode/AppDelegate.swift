@@ -40,7 +40,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        let URLString = url.absoluteString
+        
+        print("url = " + URLString)
+        
+        let scheme = url.scheme
+        let query = url.query
+        
+        print("scheme = " + scheme!)
+        print("query = " + query!)
+        
+        return true
+    }
+    
+    @available(iOS 10, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+//        if !url.isFileURL {
+//            return false;
+//        }
+        
+        let URLString = url.absoluteString
+        
+        print("url = " + URLString)
+        
+        let scheme = url.scheme
+        let query = url.query
+        
+        print("scheme = " + scheme!)
+        print("query = " + query!)
+        
+        
+        return true
+    }
 
 }
 

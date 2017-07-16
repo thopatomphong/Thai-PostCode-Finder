@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HeN-zs-QZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HeN-zs-QZT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,34 +13,63 @@
         <scene sceneID="9JT-nr-wuf">
             <objects>
                 <tableViewController id="Xrq-IY-Cg3" customClass="PostCodeTableViewController" customModule="PostCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZMk-LI-o09">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZMk-LI-o09">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="QMu-SJ-Kc9" detailTextLabel="k7M-Eu-zDG" style="IBUITableViewCellStyleSubtitle" id="Srr-Dt-QSV">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="Srr-Dt-QSV" customClass="PostCodeTableViewCell" customModule="PostCode" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Srr-Dt-QSV" id="Z4k-AY-axu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QMu-SJ-Kc9">
-                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subdistrict District" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qf-OJ-Jqy">
+                                            <rect key="frame" x="18" y="8" width="269" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="BKa-xs-VkP"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k7M-Eu-zDG">
-                                            <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-iy-be2">
+                                            <rect key="frame" x="297" y="20" width="70" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="Fea-BP-xHC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Province" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chc-YM-xbq">
+                                            <rect key="frame" x="18" y="35" width="269" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="GYI-Vx-Ep6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="chc-YM-xbq" firstAttribute="top" secondItem="3qf-OJ-Jqy" secondAttribute="bottom" constant="6" id="EN3-0n-atp"/>
+                                        <constraint firstItem="3qf-OJ-Jqy" firstAttribute="leading" secondItem="Z4k-AY-axu" secondAttribute="leadingMargin" constant="10" id="EsR-d4-6Zu"/>
+                                        <constraint firstItem="chc-YM-xbq" firstAttribute="trailing" secondItem="3qf-OJ-Jqy" secondAttribute="trailing" id="Gnb-56-Khm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="X1b-iy-be2" secondAttribute="trailing" id="LMd-ba-6VW"/>
+                                        <constraint firstItem="3qf-OJ-Jqy" firstAttribute="top" secondItem="Z4k-AY-axu" secondAttribute="topMargin" id="NU2-ST-taI"/>
+                                        <constraint firstItem="X1b-iy-be2" firstAttribute="leading" secondItem="3qf-OJ-Jqy" secondAttribute="trailing" constant="10" id="SCw-lk-gpN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="chc-YM-xbq" secondAttribute="bottom" id="Ssa-PK-7wZ"/>
+                                        <constraint firstItem="X1b-iy-be2" firstAttribute="centerY" secondItem="Z4k-AY-axu" secondAttribute="centerY" id="wHm-Xb-6Qv"/>
+                                        <constraint firstItem="chc-YM-xbq" firstAttribute="leading" secondItem="Z4k-AY-axu" secondAttribute="leadingMargin" constant="10" id="yh4-97-lox"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelAddress" destination="3qf-OJ-Jqy" id="BEU-TQ-uiT"/>
+                                    <outlet property="labelPostCode" destination="X1b-iy-be2" id="SB3-aO-75q"/>
+                                    <outlet property="labelProvince" destination="chc-YM-xbq" id="z0J-Z8-8Xd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64B-QP-PrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1799.2" y="140.77961019490255"/>
+            <point key="canvasLocation" x="1799.2" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cNz-Pd-HQ1">

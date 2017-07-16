@@ -15,6 +15,7 @@
 		E64BDED81E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
 		E64BDED91E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
 		E64BDEDA1E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */; };
+		E654F16C1F1B595B000F2DF9 /* PostCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E654F16B1F1B595B000F2DF9 /* PostCodeTableViewCell.swift */; };
 		E68CC0B51E3CF03100C08170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CC0B41E3CF03100C08170 /* AppDelegate.swift */; };
 		E68CC0BA1E3CF03100C08170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0B81E3CF03100C08170 /* Main.storyboard */; };
 		E68CC0BC1E3CF03100C08170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0BB1E3CF03100C08170 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		E386432A41F949C72231EA93 /* Pods_PostCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6401A131E3EEA340081BF04 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCodeTableViewController.swift; sourceTree = "<group>"; };
+		E654F16B1F1B595B000F2DF9 /* PostCodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCodeTableViewCell.swift; sourceTree = "<group>"; };
 		E68CC0B11E3CF03100C08170 /* PostCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68CC0B41E3CF03100C08170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E68CC0B91E3CF03100C08170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				E68CC0B41E3CF03100C08170 /* AppDelegate.swift */,
 				E64BDED71E3E4AA0007A4B68 /* PostCodeTableViewController.swift */,
+				E654F16B1F1B595B000F2DF9 /* PostCodeTableViewCell.swift */,
 				E6401A131E3EEA340081BF04 /* DBManager.swift */,
 				E68CC0B81E3CF03100C08170 /* Main.storyboard */,
 				E68CC0BB1E3CF03100C08170 /* Assets.xcassets */,
@@ -465,6 +468,7 @@
 			files = (
 				E68CC0B51E3CF03100C08170 /* AppDelegate.swift in Sources */,
 				E6401A141E3EEA340081BF04 /* DBManager.swift in Sources */,
+				E654F16C1F1B595B000F2DF9 /* PostCodeTableViewCell.swift in Sources */,
 				E64BDED81E3E4AA0007A4B68 /* PostCodeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

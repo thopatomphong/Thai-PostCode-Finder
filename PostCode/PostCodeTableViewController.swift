@@ -53,7 +53,9 @@ class PostCodeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        //Define Custom Tableview Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PostCodeTableViewCell
         
         //Define PostCode Variable
         let province = postcodes[indexPath.row].province!
@@ -62,8 +64,9 @@ class PostCodeTableViewController: UITableViewController {
         let postcode = postcodes[indexPath.row].postcode!
         
         //Set Label Text
-        cell.textLabel?.text = "\(postcode) ต.\(subdistrict) อ.\(district)"
-        cell.detailTextLabel?.text = " จ.\(province)"
+        cell.labelAddress.text = "\(subdistrict) \(district)"
+        cell.labelProvince.text = "\(province)"
+        cell.labelPostCode.text = "\(postcode)"
 
         return cell
     }

@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>รหัสไปรษณีย์</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -19,12 +19,12 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.reedustech.postcode</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>postcode</string>
 			</array>
-			<key>CFBundleURLName</key>
-			<string>com.reedustech.postcode</string>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

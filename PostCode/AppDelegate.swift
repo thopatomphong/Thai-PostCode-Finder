@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    @available(iOS 10, *)
+    @available(iOS 9, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 //        if !url.isFileURL {
 //            return false;

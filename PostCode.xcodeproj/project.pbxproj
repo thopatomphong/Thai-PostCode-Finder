@@ -29,6 +29,7 @@
 		E68CC0E31E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
 		E68CC0E41E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
 		E68CC0E51E3CF07400C08170 /* postcode.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E68CC0E21E3CF07400C08170 /* postcode.sqlite */; };
+		E6F58B7B20938ED900E088F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6F58B7A20938ED900E088F7 /* GoogleService-Info.plist */; };
 		EFFA705A8B6C8815488138AB /* Pods_PostCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4C1BBD79AF7E85EE87FA2 /* Pods_PostCodeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		E68CC0D41E3CF03100C08170 /* PostCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeUITests.swift; sourceTree = "<group>"; };
 		E68CC0D61E3CF03100C08170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68CC0E21E3CF07400C08170 /* postcode.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = postcode.sqlite; sourceTree = "<group>"; };
+		E6F58B7A20938ED900E088F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC5B62E376AAEE7C6F0EDA12 /* Pods-PostCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostCodeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostCodeUITests/Pods-PostCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 				E68CC0BD1E3CF03100C08170 /* LaunchScreen.storyboard */,
 				E68CC0C01E3CF03100C08170 /* Info.plist */,
 				E68CC0E21E3CF07400C08170 /* postcode.sqlite */,
+				E6F58B7A20938ED900E088F7 /* GoogleService-Info.plist */,
 			);
 			path = PostCode;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				E68CC0AE1E3CF03100C08170 /* Frameworks */,
 				E68CC0AF1E3CF03100C08170 /* Resources */,
 				7C9328EDA2EF6CDA20B18907 /* [CP] Embed Pods Frameworks */,
+				E6F58B7C20939A3B00E088F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -303,6 +307,7 @@
 			files = (
 				E68CC0E31E3CF07400C08170 /* postcode.sqlite in Resources */,
 				E68CC0BF1E3CF03100C08170 /* LaunchScreen.storyboard in Resources */,
+				E6F58B7B20938ED900E088F7 /* GoogleService-Info.plist in Resources */,
 				E68CC0BC1E3CF03100C08170 /* Assets.xcassets in Resources */,
 				E68CC0BA1E3CF03100C08170 /* Main.storyboard in Resources */,
 			);
@@ -373,10 +378,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PostCode/Pods-PostCode-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -400,6 +409,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E6F58B7C20939A3B00E088F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

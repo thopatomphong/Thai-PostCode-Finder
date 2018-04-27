@@ -7,6 +7,7 @@ use_frameworks!
   pod 'Firebase/Core'
   pod 'Fabric', '~> 1.7.6'
   pod 'Crashlytics', '~> 3.10.1'
+  pod 'Firebase/Performance'
 
   target 'PostCodeTests' do
     inherit! :search_paths

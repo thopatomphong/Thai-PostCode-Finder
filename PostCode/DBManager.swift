@@ -54,7 +54,7 @@ class DBManager: NSObject {
     func loadPostCode(searchText: String) -> [PostCodeInfo]! {
         var postcodes = [PostCodeInfo]()
         
-        if openDatabase() && searchText.characters.count > 0 {
+        if openDatabase() && searchText.count > 0 {
             let query = "select * from postcode where " +
                 FIELD_POSTCODE_PROVINCE + " like '%" + searchText + "%' or " +
                 FIELD_POSTCODE_DISTRICT + " like '%" + searchText + "%' or " +
